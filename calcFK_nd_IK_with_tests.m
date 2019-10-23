@@ -19,6 +19,7 @@ q2 = linspace(-pi,pi,5);
 theta=[q1 q2 0 pi 0 0];
 
 
+
 % q1 for variable joint 1 and joint 2 angles
 
 for i = 1:length(q1)
@@ -60,7 +61,7 @@ q2_1 = atan2(s2,c2_2)
 q3= q23-q20
 q3_1= q23-q2_1
 
-% computing invere kinematics for the wrist
+% computing invere kinematics for the wrist using joint decoupling
 
 r60_kine = fkine(1:3, 1:3);
 r30_kine = f_arm(1:3, 1:3);
